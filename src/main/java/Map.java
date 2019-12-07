@@ -86,22 +86,22 @@ public class Map implements IDrawable{
         {
             case GLFW_KEY_LEFT:
                 applicableTiles = GetRemainingCells(player.xPos,player.yPos,direction.LEFT);
-                if (applicableTiles.size() < 1) break;
+                if (applicableTiles.isEmpty()) break;
                 player.xPos = getCoordsFromIndex(tiles.indexOf(applicableTiles.get(applicableTiles.size()-1))).getValue0();
                 break;
             case GLFW_KEY_UP:
                 applicableTiles = GetRemainingCells(player.xPos,player.yPos,direction.UP);
-                if (applicableTiles.size() < 1) break;
+                if (applicableTiles.isEmpty()) break;
                 player.yPos = getCoordsFromIndex(tiles.indexOf(applicableTiles.get(applicableTiles.size()-1))).getValue1();
                 break;
             case GLFW_KEY_RIGHT:
                 applicableTiles = GetRemainingCells(player.xPos,player.yPos,direction.RIGHT);
-                if (applicableTiles.size() < 1) break;
+                if (applicableTiles.isEmpty()) break;
                 player.xPos = getCoordsFromIndex(tiles.indexOf(applicableTiles.get(applicableTiles.size()-1))).getValue0();
                 break;
             case GLFW_KEY_DOWN:
                 applicableTiles = GetRemainingCells(player.xPos,player.yPos,direction.DOWN);
-                if (applicableTiles.size() < 1) break;
+                if (applicableTiles.isEmpty()) break;
                 player.yPos = getCoordsFromIndex(tiles.indexOf(applicableTiles.get(applicableTiles.size()-1))).getValue1();
                 break;
             case GLFW_KEY_LEFT_ALT:
