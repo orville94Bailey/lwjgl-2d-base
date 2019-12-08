@@ -1,11 +1,11 @@
+package bulk;
+
 import Rendering.Renderer;
-import org.javatuples.Pair;
 import org.javatuples.Triplet;
 import org.lwjgl.Version;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.glfw.GLFWVidMode;
 import org.lwjgl.opengl.GL;
-import org.lwjgl.opengl.GL11;
 import org.lwjgl.system.MemoryStack;
 
 import java.nio.IntBuffer;
@@ -45,8 +45,8 @@ public class Main {
         colors.add(new Triplet<Float, Float, Float>(1f,0f,0f));
         colors.add(new Triplet<Float, Float, Float>(0f,1f,0f));
         colors.add(new Triplet<Float, Float, Float>(0f,0f,1f));
-        height = 500;
-        width = 500;
+        height = 100;
+        width = 100;
         myMap = new Map(height,width);
         Renderer.RegisterDrawable(myMap);
 
