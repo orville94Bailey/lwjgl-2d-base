@@ -10,10 +10,10 @@
         <maven.compiler.release>11</maven.compiler.release>
         <lwjgl.version>3.2.3</lwjgl.version>
         <lwjgl.natives>natives-windows</lwjgl.natives>
+        
         <sonar.projectKey>orville94Bailey_lwjgl-2d-base</sonar.projectKey>
         <sonar.organization>orville94bailey</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.login></sonar.login>
     </properties>
 
     <dependencyManagement>
@@ -350,6 +350,24 @@
             <groupId>org.lwjgl</groupId>
             <artifactId>lwjgl-zstd</artifactId>
             <classifier>${lwjgl.natives}</classifier>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13-rc-2</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.5.1</version>
+            <scope>compile</scope>
         </dependency>
     </dependencies>
 </project>

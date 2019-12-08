@@ -1,3 +1,5 @@
+package bulk;
+
 import Interfaces.IDrawable;
 
 public class Tile {
@@ -11,5 +13,5 @@ public class Tile {
     private int ActivatedCount = 0;
     private boolean canBeMovedThrough = true;
     public static final int TILE_WIDTH = 10;
-    public static int TILE_WIDTH_HALF = TILE_WIDTH/2;
+    public static final int TILE_WIDTH_HALF = TILE_WIDTH/2;
 }
